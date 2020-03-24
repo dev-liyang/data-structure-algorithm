@@ -67,14 +67,14 @@ void test4(){
 
 int main(int argc, const char * argv[]) {
     
-    // 栈
-    test1();
-    
-    // 单链表
-    test2();
-    
-    // 双向链表
-    test3();
+//    // 栈
+//    test1();
+//    
+//    // 单链表
+//    test2();
+//    
+//    // 双向链表
+//    test3();
     
     // 队列
     test4();
