@@ -11,6 +11,10 @@
 #import "LinkedList.h"
 #import "DoubleLinkedList.h"
 #import "Queue.h"
+#import "BubbleSort.h"
+#import "BubbleSort2.h"
+#import "BubbleSort3.h"
+#import "SelectionSort.h"
 
 void test1(){
     Stack *stack = [Stack new];
@@ -64,20 +68,47 @@ void test4(){
     }
 }
 
+void test5(){
+    
+//    NSArray *numArr = @[@(1), @(3), @(4), @(5), @(6), @(8), @(9), @(12)];
+//    NSArray *numArr = @[ @(3), @(9), @(4), @(1), @(6), @(8), @(12), @(5)];
+    NSArray *numArr = @[@(6), @(5), @(4), @(3), @(1), @(7), @(8), @(9), @(10), @(12)];
+    
+    BubbleSort *bs = [[BubbleSort alloc] init];
+    [bs sort:numArr];
+    [bs printSortedDesc];
+    
+    BubbleSort2 *bs2 = [[BubbleSort2 alloc] init];
+    [bs2 sort:numArr];
+    [bs2 printSortedDesc];
+    
+    BubbleSort3 *bs3 = [[BubbleSort3 alloc] init];
+    [bs3 sort:numArr];
+    [bs3 printSortedDesc];
+    
+    
+    SelectionSort *ss = [[SelectionSort alloc] init];
+    [ss sort:numArr];
+    [ss printSortedDesc];
+
+}
 
 int main(int argc, const char * argv[]) {
     
 //    // 栈
 //    test1();
-//    
+//
 //    // 单链表
 //    test2();
-//    
+//
 //    // 双向链表
 //    test3();
+//
+//    // 队列
+//    test4();
     
-    // 队列
-    test4();
+    // 排序
+    test5();
     
     return 0;
 }
