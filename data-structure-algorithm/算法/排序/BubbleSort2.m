@@ -17,7 +17,7 @@
     for (NSInteger i = self.resultArr.count - 1; i > 0; i --) {
         BOOL isSorted = YES;
         for (NSInteger j = 0; j < i; j ++) {
-            if ([self compare:j endIndex:j+1]) {
+            if ([self compare:j endIndex:j+1] > 0) {
                 NSNumber *tmp = self.resultArr[j];
                 self.resultArr[j] = self.resultArr[j+1];
                 self.resultArr[j+1] = tmp;

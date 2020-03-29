@@ -76,20 +76,19 @@ void test5(){
     
     BubbleSort *bs = [[BubbleSort alloc] init];
     [bs sort:numArr];
-    [bs printSortedDesc];
+    NSLog(@"BubbleSort: %@", bs);
     
     BubbleSort2 *bs2 = [[BubbleSort2 alloc] init];
     [bs2 sort:numArr];
-    [bs2 printSortedDesc];
+    NSLog(@"BubbleSort2: %@", bs2);
     
     BubbleSort3 *bs3 = [[BubbleSort3 alloc] init];
     [bs3 sort:numArr];
-    [bs3 printSortedDesc];
-    
+    NSLog(@"BubbleSort3: %@", bs3);
     
     SelectionSort *ss = [[SelectionSort alloc] init];
     [ss sort:numArr];
-    [ss printSortedDesc];
+    NSLog(@"SelectionSort: %@", ss);
 
 }
 

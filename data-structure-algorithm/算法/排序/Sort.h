@@ -18,14 +18,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray *)sort:(NSArray <NSNumber *>*)array;
 
-- (BOOL)compare:(NSInteger)beginIndex endIndex:(NSInteger)endIndex;
+// 比较
+- (NSInteger)compare:(NSInteger)beginIndex endIndex:(NSInteger)endIndex;
+
+// 交换
+- (void)exchange:(NSInteger)index1 index2:(NSInteger)index2;
 
 // 冒泡排序
 - (NSArray *)bubbleSort1:(NSArray <NSNumber *>*)numArr ;
 - (NSArray *)bubbleSort2:(NSArray <NSNumber *>*)numArr ;
 - (NSArray *)bubbleSort3:(NSArray <NSNumber *>*)numArr ;
-
-- (void)printSortedDesc;
 
 @end
 

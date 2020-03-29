@@ -24,21 +24,30 @@
 }
 
 
-- (BOOL)compare:(NSInteger)beginIndex endIndex:(NSInteger)endIndex{
+- (NSInteger)compare:(NSInteger)beginIndex endIndex:(NSInteger)endIndex{
     _compareCount ++;
     if ([self.resultArr[beginIndex] intValue] > [self.resultArr[endIndex] intValue]) {
-        return YES;
-    } else{
-        return NO;
+        return 1;
+    } else if ([self.resultArr[beginIndex] intValue] == [self.resultArr[endIndex] intValue]){
+        return 0;
+    } else {
+        return -1;
     }
 }
 
-- (void)printSortedDesc {
+
+- (void)exchange:(NSInteger)index1 index2:(NSInteger)index2{
+   NSNumber *tmp = self.resultArr[index1];
+   self.resultArr[index1] = self.resultArr[index2];
+   self.resultArr[index2] = tmp;
+}
+
+- (NSString *)description{
     NSMutableString *logMsg = [NSMutableString string];
     for (NSNumber *num in self.resultArr) {
         [logMsg appendFormat:@"%@_", num];
     }
-    NSLog(@"sortCount=%zd, sortedArr:%@", self.compareCount ,logMsg);
+    return [NSString stringWithFormat:@"sortCount=%zd, sortedArr:%@", self.compareCount ,logMsg];
 }
 
 @end

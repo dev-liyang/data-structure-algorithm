@@ -16,7 +16,7 @@
     for (NSInteger i = self.resultArr.count - 1; i > 0; i --) {
         NSInteger maxIndex = 0;
         for (NSInteger j = 1; j <= i; j ++) {
-            if ([self compare:j endIndex:maxIndex]) {
+            if ([self compare:j endIndex:maxIndex] > 0) {
                 maxIndex = j;
             }
         }
