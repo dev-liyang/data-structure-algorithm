@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6F1604B2430DB1A00E88F9C /* InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1604A2430DB1A00E88F9C /* InsertionSort.m */; };
 		D304065A23A395EB0036D62D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D304065923A395EB0036D62D /* main.m */; };
 		D304066F23A396420036D62D /* DoubleListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D304066323A396420036D62D /* DoubleListNode.m */; };
 		D304067023A396420036D62D /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = D304066423A396420036D62D /* LinkedList.m */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6F160492430DB1A00E88F9C /* InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
+		B6F1604A2430DB1A00E88F9C /* InsertionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertionSort.m; sourceTree = "<group>"; };
 		D304065623A395EB0036D62D /* data-structure-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "data-structure-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D304065923A395EB0036D62D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D304066123A396420036D62D /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				D30923582429FDCA0060A582 /* BubbleSort3.m */,
 				D30923512429FB940060A582 /* SelectionSort.h */,
 				D30923522429FB940060A582 /* SelectionSort.m */,
+				B6F160492430DB1A00E88F9C /* InsertionSort.h */,
+				B6F1604A2430DB1A00E88F9C /* InsertionSort.m */,
 			);
 			path = "排序";
 			sourceTree = "<group>";
@@ -223,6 +228,7 @@
 				D30923502429FB810060A582 /* BubbleSort.m in Sources */,
 				D30923532429FB940060A582 /* SelectionSort.m in Sources */,
 				D304065A23A395EB0036D62D /* main.m in Sources */,
+				B6F1604B2430DB1A00E88F9C /* InsertionSort.m in Sources */,
 				D304067223A396420036D62D /* ListNode.m in Sources */,
 				D304067123A396420036D62D /* DoubleLinkedList.m in Sources */,
 				D30923592429FDCA0060A582 /* BubbleSort3.m in Sources */,
