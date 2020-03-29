@@ -15,6 +15,7 @@
 #import "BubbleSort2.h"
 #import "BubbleSort3.h"
 #import "SelectionSort.h"
+#import "InsertionSort.h"
 
 void test1(){
     Stack *stack = [Stack new];
@@ -72,6 +73,7 @@ void test5(){
     
 //    NSArray *numArr = @[@(1), @(3), @(4), @(5), @(6), @(8), @(9), @(12)];
 //    NSArray *numArr = @[ @(3), @(9), @(4), @(1), @(6), @(8), @(12), @(5)];
+//    NSArray *numArr = @[@(12), @(9), @(8), @(6), @(5), @(4), @(3), @(1)];
     NSArray *numArr = @[@(6), @(5), @(4), @(3), @(1), @(7), @(8), @(9), @(10), @(12)];
     
     BubbleSort *bs = [[BubbleSort alloc] init];
@@ -89,6 +91,10 @@ void test5(){
     SelectionSort *ss = [[SelectionSort alloc] init];
     [ss sort:numArr];
     NSLog(@"SelectionSort: %@", ss);
+    
+    InsertionSort *is = [[InsertionSort alloc] init];
+    [is sort:numArr];
+    NSLog(@"InsertionSort: %@", is);
 
 }
 
