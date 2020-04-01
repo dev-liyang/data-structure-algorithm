@@ -30,7 +30,7 @@
 
     for (int i = 1; i < self.resultArr.count; i ++) {
         for (int j = i; j > 0; j --) {
-            if ([self compare:j endIndex:j - 1] && j == i) {
+            if ([self compare:j endIndex:j - 1] > 0 && j == i) {
                 break;
             }
             if ([self compare:j endIndex:j - 1] < 0) {
