@@ -19,4 +19,15 @@
     return self;
 }
 
+- (void)printNodeList {
+    NSMutableString *listStr = [NSMutableString string];
+    ListNode *node = self;
+    while (node != nil) {
+        [listStr appendFormat:@"%@->", node.value];
+        node = node.next;
+    }
+    [listStr appendFormat:@"null"];
+    NSLog(@"\n---------------------\n%@\n---------------------", listStr);
+}
+
 @end

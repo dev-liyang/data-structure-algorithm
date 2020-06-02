@@ -11,7 +11,7 @@
 @interface LinkedList ()
 
 /// 虚拟头节点 index = -1
-@property (nonatomic, strong, nullable) ListNode *head;
+@property (nonatomic, strong, nullable) ListNode *first;
 
 @end
 
@@ -24,7 +24,7 @@
 {
     self = [super init];
     if (self) {
-        _head = [[ListNode alloc] initWithValue:nil]; //虚拟头结点不设置值
+        _first = [[ListNode alloc] initWithValue:nil]; //虚拟头结点不设置值
     }
     return self;
 }
@@ -83,7 +83,7 @@
         return nil;
     }
     
-    ListNode *node = _head; // 当index = -1, 虚拟头结点
+    ListNode *node = _first; // 当index = -1, 虚拟头结点
     for (int i = 0; i <= index; i ++) {
         node = node.next;
     }
@@ -101,20 +101,23 @@
 }
 
 - (void)clear{
-    _head = nil;
+    _first = nil;
+}
+
+- (ListNode *)head {
+    return self.first.next;
 }
 
 /// 打印链表
 - (void)printfLinedList{
     NSMutableString *listStr = [NSMutableString string];
-    ListNode *node = self.head.next;
+    ListNode *node = self.first.next;
     while (node != nil) {
         [listStr appendFormat:@"%@->", node.value];
         node = node.next;
     }
     [listStr appendFormat:@"null"];
-    NSLog(@"\n%@", listStr);
-    printf("\n");
+    NSLog(@"\n---------------------\n%@\n---------------------", listStr);
 }
 
 @end

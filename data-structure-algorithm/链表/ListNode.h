@@ -18,8 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// 节点值
 @property (nonatomic, strong, nullable) id value;
 
-// 构造节点
+/// 构造节点
 - (instancetype)initWithValue:(_Nullable id)value;
+
+/// 打印节点
+- (void)printNodeList;
 
 @end
 

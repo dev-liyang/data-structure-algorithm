@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 链表
 @interface LinkedList : NSObject
 
+/// 头节点
+@property (nonatomic, strong, nullable) ListNode *head;
+
 /// 添加节点
 - (void)add:(id)value;
 
