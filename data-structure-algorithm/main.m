@@ -17,6 +17,7 @@
 #import "BubbleSort3.h"
 #import "SelectionSort.h"
 #import "InsertionSort.h"
+#import "BinarySearchTree.h"
 
 void test1(){
     Stack *stack = [Stack new];
@@ -99,6 +100,20 @@ void test5(){
 
 }
 
+void test6() {
+    BinarySearchTree *tree = [[BinarySearchTree alloc] init];
+    
+    [tree creatTreeWithArray:@[@8, @3, @10, @1, @6, @14, @4, @7, @13]];
+    
+    [tree printfTree];
+    
+    [tree add:@(20)];
+    
+    [tree remove:@(3)];
+    
+    [tree printfTree];
+}
+
 int main(int argc, const char * argv[]) {
     
 //    // 栈
@@ -113,8 +128,11 @@ int main(int argc, const char * argv[]) {
 //    // 队列
 //    test4();
     
-    // 排序
-    test5();
+//    // 排序
+//    test5();
+    
+    // 树
+    test6();
     
     return 0;
 }
