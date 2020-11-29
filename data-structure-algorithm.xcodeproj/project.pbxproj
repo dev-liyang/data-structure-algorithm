@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6A8AD1225733B4F00DE92B5 /* QuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8AD1125733B4F00DE92B5 /* QuickSort.m */; };
 		B6F1604B2430DB1A00E88F9C /* InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1604A2430DB1A00E88F9C /* InsertionSort.m */; };
 		B6FBDE5A248CF88700252C96 /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBDE54248CF88700252C96 /* BinarySearchTree.m */; };
 		B6FBDE5B248CF88700252C96 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = B6FBDE55248CF88700252C96 /* BinaryTree.m */; };
@@ -38,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6A8AD1025733B4F00DE92B5 /* QuickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		B6A8AD1125733B4F00DE92B5 /* QuickSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuickSort.m; sourceTree = "<group>"; };
 		B6F160492430DB1A00E88F9C /* InsertionSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InsertionSort.h; sourceTree = "<group>"; };
 		B6F1604A2430DB1A00E88F9C /* InsertionSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsertionSort.m; sourceTree = "<group>"; };
 		B6FBDE54248CF88700252C96 /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				D30923522429FB940060A582 /* SelectionSort.m */,
 				B6F160492430DB1A00E88F9C /* InsertionSort.h */,
 				B6F1604A2430DB1A00E88F9C /* InsertionSort.m */,
+				B6A8AD1025733B4F00DE92B5 /* QuickSort.h */,
+				B6A8AD1125733B4F00DE92B5 /* QuickSort.m */,
 			);
 			path = "排序";
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				D304067323A396420036D62D /* Stack.m in Sources */,
 				D30923562429FDC30060A582 /* BubbleSort2.m in Sources */,
 				D304067023A396420036D62D /* LinkedList.m in Sources */,
+				B6A8AD1225733B4F00DE92B5 /* QuickSort.m in Sources */,
 				D304066F23A396420036D62D /* DoubleListNode.m in Sources */,
 				B6FBDE5A248CF88700252C96 /* BinarySearchTree.m in Sources */,
 				D30923502429FB810060A582 /* BubbleSort.m in Sources */,

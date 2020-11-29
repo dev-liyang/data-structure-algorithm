@@ -23,7 +23,6 @@
     return nil;
 }
 
-
 - (NSInteger)compare:(NSInteger)beginIndex endIndex:(NSInteger)endIndex{
     _compareCount ++;
     if ([self.resultArr[beginIndex] intValue] > [self.resultArr[endIndex] intValue]) {
@@ -35,6 +34,16 @@
     }
 }
 
+- (NSInteger)compare:(NSNumber *)num1 num2:(NSNumber *)num2 {
+    _compareCount ++;
+    if ([num1 intValue] > [num2 intValue]) {
+        return 1;
+    } else if ([num1 intValue] == [num2 intValue]){
+        return 0;
+    } else {
+        return -1;
+    }
+}
 
 - (void)exchange:(NSInteger)index1 index2:(NSInteger)index2{
    NSNumber *tmp = self.resultArr[index1];

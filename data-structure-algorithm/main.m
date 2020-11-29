@@ -17,6 +17,7 @@
 #import "BubbleSort3.h"
 #import "SelectionSort.h"
 #import "InsertionSort.h"
+#import "QuickSort.h"
 #import "BinarySearchTree.h"
 
 void test1(){
@@ -76,7 +77,8 @@ void test5(){
 //    NSArray *numArr = @[@(1), @(3), @(4), @(5), @(6), @(8), @(9), @(12)];
 //    NSArray *numArr = @[ @(3), @(9), @(4), @(1), @(6), @(8), @(12), @(5)];
 //    NSArray *numArr = @[@(12), @(9), @(8), @(6), @(5), @(4), @(3), @(1)];
-    NSArray *numArr = @[@(6), @(5), @(4), @(3), @(1), @(7), @(8), @(9), @(10), @(12)];
+//    NSArray *numArr = @[@(6), @(5), @(4), @(3), @(1), @(7), @(8), @(9), @(10), @(12)];
+    NSArray *numArr = @[@(18), @(22), @(3), @(9), @(4), @(1), @(6), @(8), @(12), @(15), @(13), @(19), @(14), @(11), @(16)];
     
     BubbleSort *bs = [[BubbleSort alloc] init];
     [bs sort:numArr];
@@ -97,6 +99,10 @@ void test5(){
     InsertionSort *is = [[InsertionSort alloc] init];
     [is sort:numArr];
     NSLog(@"InsertionSort: %@", is);
+    
+    QuickSort *qs = [[QuickSort alloc] init];
+    [qs sort:numArr];
+    NSLog(@"QuickSort: %@", qs);
 
 }
 

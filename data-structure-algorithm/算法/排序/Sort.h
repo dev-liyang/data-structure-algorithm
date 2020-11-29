@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // 比较
 - (NSInteger)compare:(NSInteger)beginIndex endIndex:(NSInteger)endIndex;
+- (NSInteger)compare:(NSNumber *)num1 num2:(NSNumber *)num2;
 
 // 交换
 - (void)exchange:(NSInteger)index1 index2:(NSInteger)index2;
